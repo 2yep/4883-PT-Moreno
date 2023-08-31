@@ -8,10 +8,10 @@ This is a solution to the "Hashmat" UVA problem on https://onlinejudge.org/. Pro
 
 |   #   | File                   | Description                                             |
 | :---: | ---------------------- | ------------------------------------------------------- |
-|   1   | [main.cpp](main.cpp)   | Main driver of my program which solves Hashmat problem. |
-|   2   | [data.txt](data.txt)   | Sample input for program                                |
-|   3   | [10055.pdf](10055.pdf) | Problem statement and guidelines                        |
-|   4   | [out.txt](out.txt)     | output for given data                                   |
+|   1   | [main.cpp](main)   | Main driver of my program which solves Hashmat problem. |
+|   2   | [data.txt](data)   | Sample input for program                                |
+|   3   | [10055.pdf](10055) | Problem statement and guidelines                        |
+|   4   | [out.txt](out)     | output for given data                                   |
 
 ### Instructions
 
