@@ -1,4 +1,4 @@
-## A03B - Register + Simple Problem
+## A03 - Register + Hashmat Problem
 ### Miklos Moreno
 ### Description:
 
