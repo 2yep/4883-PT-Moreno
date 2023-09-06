@@ -4,6 +4,8 @@
 #include <algorithm>
 
 #define endl '\n'
+#define pb push_back
+#define maxHours 18000
 
 using namespace std;
 
@@ -16,11 +18,11 @@ int main()
     // Cycle time must exist and != 0
     while (cin >> cTime && cTime)
     {
-        times.push_back(cTime);
+        times.pb(cTime);
         // Stop reading in cycle times when 0 is entered
         while (cTime)
         {
-            times.push_back(cTime);
+            times.pb(cTime);
             cin >> cTime;
         }
 
@@ -40,7 +42,7 @@ int main()
                 }
             }
             // Test if lights are all green until 5 hours have passed
-        } while (!(Green) && ++elapTime <= 18000);
+        } while (!(Green) && ++elapTime <= maxHours);
 
         // If all lights are green, print the time
         if (Green)
