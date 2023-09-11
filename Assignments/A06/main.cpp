@@ -26,6 +26,7 @@ int main()
     while (n--) // while n is not 0
     {
         double treeCount = 0; // total count of all trees
+                              // double for percentage calculation
 
         // map to store tree name and its count
         map<string, int> treeRecord;
