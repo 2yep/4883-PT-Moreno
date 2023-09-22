@@ -6,12 +6,12 @@ This is a solution to the "Hardwood Species" UVA problem on https://onlinejudge.
 
 ### Files
 
-|   #   | File                | Description                                             |
-| :---: | ------------------- | ------------------------------------------------------- |
-|   1   | [10226](10226.pdf)  | Problem statement and guidelines                        |
-|   2   | [main](main.cpp)    | Main driver of my program which solves Hashmat problem. |
-|   3   | [input](uDebug.txt) | Input from uDebug                                       |
-|   4   | [output](out.txt)   | Output from uDebug input                                |
+|   #   | File                | Description                                     |
+| :---: | ------------------- | ----------------------------------------------- |
+|   1   | [10226](10226.pdf)  | Problem statement and guidelines                |
+|   2   | [main](main.cpp)    | Main driver of my program which solves problem. |
+|   3   | [input](uDebug.txt) | Input from uDebug                               |
+|   4   | [output](out.txt)   | Output from uDebug input                        |
 
 
 ### Instructions

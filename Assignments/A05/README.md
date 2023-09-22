@@ -6,14 +6,14 @@ This is a solution to the "Traffic Lights" UVA problem on https://onlinejudge.or
 
 ### Files
 
-|   #   | File                 | Description                                             |
-| :---: | -------------------- | ------------------------------------------------------- |
-|   1   | [161](161.pdf)       | Problem statement and guidelines                        |
-|   2   | [main](main.cpp)     | Main driver of my program which solves Hashmat problem. |
-|   3   | [data](data.txt)     | Sample input for program                                |
-|   4   | [uDebug](uDebug.txt) | input from uDebug                                       |
-|   5   | [out](out.txt)       | output for given data                                   |
-|   6   | [out2](out2.txt)     | output for uDebug data                                  |
+|   #   | File                 | Description                                     |
+| :---: | -------------------- | ----------------------------------------------- |
+|   1   | [161](161.pdf)       | Problem statement and guidelines                |
+|   2   | [main](main.cpp)     | Main driver of my program which solves problem. |
+|   3   | [data](data.txt)     | Sample input for program                        |
+|   4   | [uDebug](uDebug.txt) | input from uDebug                               |
+|   5   | [out](out.txt)       | output for given data                           |
+|   6   | [out2](out2.txt)     | output for uDebug data                          |
 
 ### Instructions
 
