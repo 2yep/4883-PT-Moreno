@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define newl '\n'
-
 typedef pair<int, int> intP;
 
 // Structure to represent a graph
@@ -25,22 +23,18 @@ struct Graph
         edges.push_back({w, {u, v}});
     }
 
-    // Function to find MST using Kruskal's
-    // MST algorithm
-    // Functions returns weight of the MST
+    // Function returns weight of the MST
     int kruskalMST();
 };
 
-// To represent Disjoint Sets
-struct DisjointSets
+// represent disjoint sets
+struct Disjoint
 {
     int *parent, *rnk;
     int n;
 
-    // Constructor.
-    DisjointSets(int n)
+    Disjoint(int n)
     {
-        // Allocate memory
         this->n = n;
         parent = new int[n + 1];
         rnk = new int[n + 1];
@@ -92,10 +86,11 @@ int Graph::kruskalMST()
     sort(edges.begin(), edges.end());
 
     // Create disjoint sets
-    DisjointSets ds(V);
+    Disjoint ds(V);
 
     // Iterate through all sorted edges
     vector<pair<int, intP>>::iterator it;
+
     for (it = edges.begin(); it != edges.end(); it++)
     {
         int u = it->second.first;
@@ -121,25 +116,25 @@ int Graph::kruskalMST()
 
 int main()
 {
-    int m;            // # of junctions (vertices)
-    int n;            // # of roads (edges)
-    int x;            // intial junction (starting point)
-    int y;            // terminal junction (ending point)
-    int z;            // length of road (weight)
-    int initial_cost; // initial cost
+    int m;        // # of junctions (vertices)
+    int n;        // # of roads (edges)
+    int x;        // intial junction (starting point)
+    int y;        // terminal junction (ending point)
+    int z;        // length of road (weight)
+    int initCost; // initial cost
 
     // Terminate program when m == n == 0
     while (cin >> m && cin >> n && m && n)
     {
         Graph G(m, n);
-        initial_cost = 0;
+        initCost = 0;
         for (int i = 0; i < n; i++)
         {
             cin >> x >> y >> z;
             G.addEdge(x, y, z);
-            initial_cost += z;
+            initCost += z;
         }
-        cout << initial_cost - G.kruskalMST() << newl;
+        cout << initCost - G.kruskalMST() << '\n';
     }
     return 0;
 }
