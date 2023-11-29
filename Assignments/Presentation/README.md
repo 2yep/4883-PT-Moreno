@@ -1,4 +1,4 @@
-## Presentation - Parentheses Balance
+## Presentation - Dark Roads
 ### Miklos Moreno
 ### Description:
 
@@ -10,8 +10,6 @@ This is a solution to the "Dark Roads" UVA problem on https://onlinejudge.org/. 
 | :---: | ------------------- | ----------------------------------------------- |
 |   1   | [11631](p11631.pdf) | Problem statement and guidelines                |
 |   2   | [main](main.cpp)    | Main driver of my program which solves problem. |
-|   3   | [input](uDebug.txt) | Input from uDebug                               |
-|   4   | [output](out.txt)   | Output from uDebug input                        |
 
 
 ### Instructions
@@ -23,7 +21,7 @@ input and output to the correct files.
     - `g++ main.cpp -o main`
     - `./main < <inputfile> > <outputfile>`
 
-### Steps to Solution (chatGPT)
+### High level solution without implementation aka steps to solution (chatGPT)
 
 Certainly! The problem "Dark Roads" (UVa 11631) involves finding the minimum cost to connect all the cities in a network using a minimum spanning tree. Here's a high-level solution:
 
