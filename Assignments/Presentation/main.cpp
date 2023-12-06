@@ -30,20 +30,20 @@ struct Graph
 // represent disjoint sets
 struct Disjoint
 {
-    int *parent, *rnk;
+    int *parent, *rank;
     int n;
 
     Disjoint(int n)
     {
         this->n = n;
         parent = new int[n + 1];
-        rnk = new int[n + 1];
+        rank = new int[n + 1];
 
         // Initially, all vertices are in
         // different sets and have rank 0.
         for (int i = 0; i <= n; i++)
         {
-            rnk[i] = 0;
+            rank[i] = 0;
 
             // every element is parent of itself
             parent[i] = i;
@@ -51,7 +51,6 @@ struct Disjoint
     }
 
     // Find the parent of a node 'u'
-    // Path Compression
     int find(int u)
     {
         /* Make the parent of the nodes in the path
@@ -68,22 +67,21 @@ struct Disjoint
 
         /* Make tree with smaller height
         a subtree of the other tree */
-        if (rnk[x] > rnk[y])
+        if (rank[x] > rank[y])
             parent[y] = x;
-        else // If rnk[x] <= rnk[y]
+        else // If rank[x] <= rank[y]
             parent[x] = y;
 
-        if (rnk[x] == rnk[y])
-            rnk[y]++;
+        if (rank[x] == rank[y])
+            rank[y]++;
     }
 };
 
-
-/*  
+/*
     1. Sort all the edges in non-decreasing order of their weight.
     2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far.
-    If cycle is not formed, include this edge. Else, discard it. 
-    Repeat step#2 until there are (V-1) edges in the spanning tree. 
+    If cycle is not formed, include this edge. Else, discard it.
+    Repeat step#2 until there are (V-1) edges in the spanning tree.
 */
 int Graph::kruskalMST()
 {
